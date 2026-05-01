@@ -1,10 +1,11 @@
 <html class=" ofjlwapjp idc0_350"><head>
 <title>Play nim game online</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Description" content="Play Nim game online 2">
 <meta name="Keywords" content="nim game, nim, puzzle, marienbad, Bouton, take-away game, tactix, theory, online">
 <meta name="Abstract" content="Nim puzzle to solve online">
-<meta name="copyright" content="©1996-2010 | Archimedes Lab">
+<meta name="copyright" content="Â©1996-2010 | Archimedes Lab">
 <meta name="robots" content="FOLLOW,INDEX">
 <script language="JavaScript" type="text/javascript">
 <!--
@@ -189,10 +190,50 @@ INPUT.Button2 {
 }
 
 -->
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 12px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f4ffe8 0%, #ffffff 60%);
+}
+
+table.game-shell {
+  width: min(92vw, 760px);
+  margin: 0 auto;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+
+input[type="button"] {
+  min-height: 30px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  body { padding: 12px 8px; }
+  table.game-shell { width: 100%; }
+  blockquote { margin: 12px; }
+  td[width="59"] { width: auto !important; }
+  input[type="button"] { width: 100%; max-width: 130px; }
+}
+
 </style>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0066FF" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="new_game()">
-<table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+<table class="game-shell" width="300" border="0" align="left" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td height="34" align="center" valign="bottom" background="nim_files/top_green-large.gif"><font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif"><em>Online
           Game by Archimedes' Lab</em></font></td>
@@ -280,7 +321,7 @@ INPUT.Button2 {
   </tr>
   <tr>
     <td align="center" valign="top"><img src="nim_files/fondu.gif" alt="line" border="0" height="1" width="100%"><br>
-      <font size="1" face="Verdana, Arial, Helvetica, sans-serif">© <a href="https://www.archimedes-lab.org/game_nim/index.html" target="_blank">Archimedes'
+      <font size="1" face="Verdana, Arial, Helvetica, sans-serif">Â© <a href="https://www.archimedes-lab.org/game_nim/index.html" target="_blank">Archimedes'
       Lab</a> </font><font color="#339900" size="1" face="Verdana, Arial, Helvetica, sans-serif">enhances
       your critical and creative thinking skills</font></td>
   </tr>
