@@ -207,11 +207,13 @@ body {
 }
 
 table.game-shell {
-  width: min(92vw, 760px);
+  width: 100%;
+  max-width: 760px;
   margin: 0 auto;
   box-shadow: 0 12px 28px rgba(0,0,0,0.18);
   border-radius: 14px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 
@@ -220,14 +222,21 @@ input[type="button"] {
   padding: 4px 10px;
   border-radius: 8px;
   font-weight: 600;
+  vertical-align: middle;
 }
 
 @media (max-width: 640px) {
-  body { padding: 12px 8px; }
-  table.game-shell { width: 100%; }
-  blockquote { margin: 12px; }
-  td[width="59"] { width: auto !important; }
-  input[type="button"] { width: 100%; max-width: 130px; }
+  body { padding: 8px 0; overflow-x: hidden; }
+  table.game-shell {
+    width: 300px;
+    max-width: 300px;
+    transform-origin: top center;
+    transform: scale(min(1, calc((100vw - 8px) / 300)));
+    margin-bottom: 28px;
+  }
+  blockquote { margin: 10px; }
+  td[height="70"] { height: auto; }
+  td[height="70"] input[type="button"] { margin: 2px 0; }
 }
 
 </style>
